@@ -1,0 +1,251 @@
+@import "tailwindcss";
+
+/* ==========================================================================
+   LABORATORIO SARESA — SISTEMA DE DISEÑO MÉDICO INSTITUCIONAL
+   Inspirado en referentes clínicos de excelencia (Stamboulian, Hidalgo, CentraLab, CEGYR)
+   Tipografía: IBM Plex Sans
+   Paleta: Blanco clínico, Gris cálido suave, Terracota Saresa (#E04323) y Bordó (#7E1418)
+   ========================================================================== */
+
+:root {
+  /* Tipografía Institucional Única y Humana */
+  --font-sans: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-display: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  /* Superficies Luminosas Institucionales */
+  --color-bg-primary: #FFFFFF;
+  --color-bg-secondary: #F7F6F4;
+  --color-bg-tertiary: #EFECE6;
+  --color-bg-glass: rgba(255, 255, 255, 0.96);
+
+  /* Textos y Bordes */
+  --color-text-primary: #231F20;
+  --color-text-secondary: #52525B;
+  --color-text-muted: #71717A;
+  --color-border: #E5E5E5;
+  --color-border-strong: #D4D4D8;
+
+  /* Colores Oficiales del Logo Laboratorio Saresa */
+  --color-primary: #E04323;
+  --color-primary-hover: #C43417;
+  --color-primary-light: #FDF2EF;
+  --color-primary-glow: rgba(224, 67, 35, 0.12);
+
+  --color-accent-burgundy: #7E1418;
+  --color-secondary: #F39C12;
+  --color-secondary-hover: #D68910;
+  --color-secondary-light: #FEF9E7;
+
+  --color-danger: #DC2626;
+  --color-success: #15803D;
+  --color-warning: #D97706;
+
+  /* Sombras Médicas Discretas */
+  --shadow-sm: 0 1px 2px rgba(35, 31, 32, 0.05);
+  --shadow-md: 0 4px 12px rgba(35, 31, 32, 0.06);
+  --shadow-lg: 0 10px 24px rgba(35, 31, 32, 0.08);
+  --shadow-xl: 0 20px 36px rgba(35, 31, 32, 0.12);
+
+  /* Bordes Redondeados Clásicos (4px a 6px) */
+  --border-radius-sm: 4px;
+  --border-radius-md: 6px;
+  --border-radius-lg: 8px;
+
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s ease;
+}
+
+/* ==========================================================================
+   BASE & TIPOGRAFÍA (Dentro de @layer base para no pisar utilidades Tailwind v4)
+   ========================================================================== */
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+    line-height: 1.6;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-sans);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.015em;
+  }
+
+  a {
+    text-decoration: none;
+    transition: color var(--transition-fast);
+  }
+
+  button {
+    font-family: inherit;
+    cursor: pointer;
+  }
+
+  a,
+  button {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+}
+
+/* Scrollbar sobrio */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F7F6F4;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4D4D8;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A1A1AA;
+}
+
+/* ==========================================================================
+   CONTENEDORES Y UTILIDADES INSTITUCIONALES
+   ========================================================================== */
+@layer components {
+  .container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      padding: 0 24px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .container {
+      padding: 0 32px;
+    }
+  }
+
+  .section {
+    padding: 56px 0;
+  }
+
+  @media (min-width: 768px) {
+    .section {
+      padding: 80px 0;
+    }
+  }
+
+  .section-header {
+    margin-bottom: 40px;
+  }
+
+  .section-title {
+    font-size: clamp(1.75rem, 3vw, 2.35rem);
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    margin-bottom: 12px;
+    color: var(--color-text-primary);
+  }
+
+  .section-subtitle {
+    font-size: 1.05rem;
+    color: var(--color-text-secondary);
+    max-width: 660px;
+  }
+
+  /* Botones institucionales clásicos */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 22px;
+    font-family: var(--font-sans);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    border-radius: var(--border-radius-md);
+    transition: all var(--transition-fast);
+    text-align: center;
+    gap: 8px;
+  }
+
+  .btn-primary {
+    background-color: var(--color-primary);
+    color: #FFFFFF;
+  }
+
+  .btn-primary:hover {
+    background-color: var(--color-primary-hover);
+    color: #FFFFFF;
+  }
+
+  .btn-secondary {
+    background-color: #FFFFFF;
+    color: var(--color-text-primary);
+    border: 1px solid var(--color-border-strong);
+  }
+
+  .btn-secondary:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+    background-color: var(--color-primary-light);
+  }
+
+  .btn-full {
+    width: 100%;
+  }
+
+  .app-main {
+    min-height: calc(100vh - 300px);
+  }
+}
+
+@layer utilities {
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Animación de pulso / titileo para botón oficial de WhatsApp */
+@keyframes whatsapp-pulse-glow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.75), 0 8px 20px rgba(37, 211, 102, 0.35);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 0 12px rgba(37, 211, 102, 0), 0 10px 26px rgba(37, 211, 102, 0.55);
+    transform: scale(1.03);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0), 0 8px 20px rgba(37, 211, 102, 0.35);
+    transform: scale(1);
+  }
+}
+
+.whatsapp-blink-btn {
+  animation: whatsapp-pulse-glow 1.8s infinite ease-in-out;
+}
+
+.whatsapp-blink-btn:hover {
+  animation-play-state: paused;
+}
