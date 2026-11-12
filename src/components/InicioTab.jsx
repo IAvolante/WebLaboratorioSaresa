@@ -77,8 +77,8 @@ export default function InicioTab({ onNavigate }) {
       {/* 2. Section 1: Extracciones a Domicilio en Salta */}
       <section className="py-10 md:py-16 bg-white border-b border-neutral-200">
         <div className="container">
-          <div className="rounded-md bg-[#F7F6F4] border border-neutral-200 p-5 sm:p-10">
-            <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-5 sm:gap-6 mb-6 sm:mb-8">
+          <div className="rounded-md bg-[#F7F6F4] border border-neutral-200 p-5 sm:p-7 lg:p-9">
+            <div className="flex flex-col xl:flex-row xl:items-center justify-between gap-5 sm:gap-6 mb-6 sm:mb-8">
               <div className="max-w-2xl">
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded bg-[#E04323]/10 text-[#E04323] text-xs font-semibold mb-3">
                   <Home className="w-3.5 h-3.5 shrink-0" />
@@ -94,7 +94,7 @@ export default function InicioTab({ onNavigate }) {
                 </p>
               </div>
 
-              <div className="flex flex-col sm:flex-row sm:flex-wrap items-stretch sm:items-center gap-2.5 sm:gap-3 w-full lg:w-auto">
+              <div className="flex flex-col sm:flex-row sm:flex-wrap items-stretch sm:items-center gap-2.5 sm:gap-3 w-full xl:w-auto shrink-0">
                 <a
                   href="https://wa.me/5493872129924?text=Hola%20Laboratorio%20Saresa,%20quisiera%20coordinar%20una%20extracci%C3%B3n%20a%20domicilio."
                   target="_blank"
@@ -115,7 +115,7 @@ export default function InicioTab({ onNavigate }) {
             </div>
 
             {/* 3 Simple Visual Steps */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-3.5 sm:gap-4">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-3.5 sm:gap-4">
               <div className="bg-white rounded-md border border-neutral-200 p-4 sm:p-5 flex items-start gap-3.5">
                 <div className="w-9 h-9 rounded bg-[#E04323] text-white font-bold text-sm flex items-center justify-center flex-shrink-0">
                   1
@@ -207,7 +207,7 @@ export default function InicioTab({ onNavigate }) {
                 diagnósticos de la pareja con tecnología de alta precisión.
               </p>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3 pt-1">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-2.5 sm:gap-3 pt-1">
                 <div className="p-3 sm:p-3.5 rounded bg-[#F7F6F4] border border-neutral-200 flex items-center gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#7E1418] flex-shrink-0" />
                   <span className="text-sm font-semibold text-[#231F20]">
@@ -264,7 +264,7 @@ export default function InicioTab({ onNavigate }) {
             <button
               type="button"
               onClick={() => onNavigate('profesionales')}
-              className="text-sm font-semibold text-[#E04323] hover:underline cursor-pointer self-start sm:self-end"
+              className="text-sm font-semibold text-[#E04323] hover:underline cursor-pointer self-start sm:self-end shrink-0"
             >
               Explorar catálogo de +300 análisis →
             </button>
@@ -283,7 +283,7 @@ export default function InicioTab({ onNavigate }) {
                   <div className="w-10 h-10 rounded bg-[#F7F6F4] border border-neutral-200 text-[#E04323] flex items-center justify-center flex-shrink-0 group-hover:bg-[#E04323] group-hover:text-white transition-colors">
                     <Icon className="w-5 h-5" />
                   </div>
-                  <div>
+                  <div className="min-w-0">
                     <h3 className="text-base font-bold text-[#231F20] group-hover:text-[#E04323] transition-colors">
                       {item.title}
                     </h3>
@@ -297,8 +297,8 @@ export default function InicioTab({ onNavigate }) {
           </div>
 
           {/* Compact Strip: 59 Obras Sociales + SAMER & PEEC-FBA Badges */}
-          <div className="bg-white rounded-md border border-neutral-200 p-4 sm:p-6 flex flex-col lg:flex-row lg:items-center justify-between gap-5 sm:gap-6">
-            <div className="space-y-2.5">
+          <div className="bg-white rounded-md border border-neutral-200 p-4 sm:p-6 flex flex-col xl:flex-row xl:items-center justify-between gap-5 sm:gap-6">
+            <div className="space-y-2.5 min-w-0">
               <div className="text-sm font-bold text-[#231F20]">
                 Trabajamos con 59 Obras Sociales y Prepagas
               </div>
@@ -321,16 +321,16 @@ export default function InicioTab({ onNavigate }) {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 min-[420px]:grid-cols-2 sm:flex sm:flex-wrap items-center gap-2.5 sm:gap-3 pt-4 lg:pt-0 border-t lg:border-t-0 border-neutral-100">
+            <div className="grid grid-cols-1 min-[420px]:grid-cols-2 sm:flex sm:flex-wrap items-center gap-2.5 sm:gap-3 pt-4 xl:pt-0 border-t xl:border-t-0 border-neutral-100 shrink-0">
               <div className="flex items-center gap-2 px-3 sm:px-3.5 py-2 rounded bg-[#F7F6F4] border border-neutral-200">
                 <Award className="w-4 h-4 shrink-0 text-[#7E1418]" />
-                <span className="text-xs font-semibold text-[#231F20]">
+                <span className="text-xs font-semibold text-[#231F20] whitespace-nowrap">
                   Acreditado SAMER
                 </span>
               </div>
               <div className="flex items-center gap-2 px-3 sm:px-3.5 py-2 rounded bg-[#F7F6F4] border border-neutral-200">
                 <Award className="w-4 h-4 shrink-0 text-[#E04323]" />
-                <span className="text-xs font-semibold text-[#231F20]">
+                <span className="text-xs font-semibold text-[#231F20] whitespace-nowrap">
                   Control Externo PEEC-FBA
                 </span>
               </div>

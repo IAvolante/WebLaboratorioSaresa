@@ -291,7 +291,7 @@ export default function PacientesTab({ onNavigate }) {
           </h1>
 
           {/* 3 Top Summary Cards */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-3.5 sm:gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3.5 sm:gap-4">
             {/* Card 1: Sin Turno */}
             <div className="bg-white rounded-md border border-neutral-200 p-4 sm:p-5 shadow-2xs">
               <div className="flex items-center gap-2.5 mb-2">
@@ -329,7 +329,7 @@ export default function PacientesTab({ onNavigate }) {
             </div>
 
             {/* Card 3: Extracción a Domicilio */}
-            <div className="bg-[#7E1418] text-white rounded-md p-4 sm:p-5 shadow-sm flex flex-col justify-between">
+            <div className="md:col-span-2 lg:col-span-1 bg-[#7E1418] text-white rounded-md p-4 sm:p-5 shadow-sm flex flex-col justify-between">
               <div>
                 <div className="flex items-center gap-2.5 mb-1.5">
                   <Home className="w-5 h-5 shrink-0 text-[#F39C12]" />
@@ -342,19 +342,19 @@ export default function PacientesTab({ onNavigate }) {
                   médica.
                 </p>
               </div>
-              <div className="pt-3.5 flex items-center gap-2">
+              <div className="pt-3.5 flex flex-wrap items-center gap-2">
                 <a
                   href="https://wa.me/5493872129924?text=Hola%20Laboratorio%20Saresa,%20quisiera%20coordinar%20una%20extracci%C3%B3n%20a%20domicilio."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex flex-1 sm:flex-initial justify-center items-center gap-1.5 min-h-[40px] px-3 sm:px-3.5 py-2 rounded bg-white text-[#231F20] font-semibold text-xs hover:bg-[#F7F6F4] active:scale-[0.99] transition-all whitespace-nowrap"
+                  className="inline-flex flex-1 justify-center items-center gap-1.5 min-h-[40px] px-3 sm:px-3.5 py-2 rounded bg-white text-[#231F20] font-semibold text-xs hover:bg-[#F7F6F4] active:scale-[0.99] transition-all whitespace-nowrap"
                 >
                   <span>Pedir por WhatsApp</span>
                   <ArrowRight className="w-3.5 h-3.5 shrink-0 text-[#E04323]" />
                 </a>
                 <a
                   href="tel:03874215440"
-                  className="inline-flex flex-1 sm:flex-initial justify-center items-center gap-1.5 min-h-[40px] px-3 py-2 rounded bg-white/15 text-white text-xs font-medium hover:bg-white/25 active:scale-[0.99] transition-all whitespace-nowrap"
+                  className="inline-flex flex-1 justify-center items-center gap-1.5 min-h-[40px] px-3 py-2 rounded bg-white/15 text-white text-xs font-medium hover:bg-white/25 active:scale-[0.99] transition-all whitespace-nowrap"
                 >
                   <Phone className="w-3.5 h-3.5 shrink-0" />
                   <span>421-5440</span>
@@ -520,13 +520,13 @@ export default function PacientesTab({ onNavigate }) {
             })}
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2.5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2.5">
             {filteredInsurances.map((name) => (
               <div
                 key={name}
-                className="px-4 py-3 rounded-md bg-white border border-neutral-200 hover:border-[#E04323]/50 transition-colors flex items-center justify-between gap-2 shadow-2xs"
+                className="px-4 py-3 rounded-md bg-white border border-neutral-200 hover:border-[#E04323]/50 transition-colors flex items-center justify-between gap-2.5 shadow-2xs min-w-0"
               >
-                <span className="text-xs sm:text-sm font-medium text-[#231F20] leading-snug">
+                <span className="min-w-0 break-words text-xs sm:text-sm font-medium text-[#231F20] leading-snug">
                   {name}
                 </span>
                 <CheckCircle2 className="w-4 h-4 text-[#E04323] flex-shrink-0" />

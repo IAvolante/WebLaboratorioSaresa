@@ -134,13 +134,15 @@ export default function ReproduccionTab({ onNavigate }) {
 
       {/* 2. Three Concrete Clinical Pillars */}
       <div className="container pt-9 sm:pt-12 space-y-10 sm:space-y-12">
-        <section className="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-5">
-          {CLINICAL_UNITS.map((unit) => {
+        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
+          {CLINICAL_UNITS.map((unit, idx) => {
             const Icon = unit.icon;
             return (
               <div
                 key={unit.title}
-                className="rounded-md border border-neutral-200 bg-white p-5 sm:p-6 shadow-2xs flex flex-col justify-between"
+                className={`rounded-md border border-neutral-200 bg-white p-5 sm:p-6 shadow-2xs flex flex-col justify-between ${
+                  idx === 2 ? 'md:col-span-2 lg:col-span-1' : ''
+                }`}
               >
                 <div>
                   <div className="w-10 h-10 rounded bg-[#7E1418]/10 text-[#7E1418] flex items-center justify-center mb-4">
@@ -170,9 +172,9 @@ export default function ReproduccionTab({ onNavigate }) {
         </section>
 
         {/* 3. Short & Clear Block: Cómo pedir turno e indicaciones rápidas */}
-        <section className="rounded-md bg-[#F7F6F4] border border-neutral-200 p-6 sm:p-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
-            <div className="lg:col-span-8 space-y-3">
+        <section className="rounded-md bg-[#F7F6F4] border border-neutral-200 p-5 sm:p-7 xl:p-8">
+          <div className="grid grid-cols-1 xl:grid-cols-12 gap-6 items-center">
+            <div className="xl:col-span-8 space-y-3">
               <h2 className="text-xl sm:text-2xl font-bold text-[#231F20]">
                 ¿Cómo coordinar un Espermograma o Estudio de Embriología?
               </h2>
@@ -209,28 +211,28 @@ export default function ReproduccionTab({ onNavigate }) {
               </div>
             </div>
 
-            <div className="lg:col-span-4 bg-white rounded-md border border-neutral-200 p-5 space-y-3">
+            <div className="xl:col-span-4 bg-white rounded-md border border-neutral-200 p-5 space-y-3">
               <div className="text-sm font-bold text-[#231F20]">
                 Reservá tu horario de entrega
               </div>
               <div className="flex items-center gap-2 text-xs text-[#52525B]">
-                <Clock className="w-4 h-4 text-[#E04323]" />
+                <Clock className="w-4 h-4 shrink-0 text-[#E04323]" />
                 <span>Lunes a Viernes · Mariano Boedo 23</span>
               </div>
-              <div className="flex flex-col gap-2 pt-1">
+              <div className="flex flex-col sm:flex-row xl:flex-col gap-2 pt-1">
                 <a
                   href="https://wa.me/5493872129924?text=Hola%20Laboratorio%20Saresa,%20quisiera%20coordinar%20fecha%20para%20un%20espermograma."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full py-2.5 px-4 rounded bg-[#E04323] hover:bg-[#C43417] text-white font-semibold text-sm text-center transition-colors"
+                  className="flex-1 py-2.5 px-4 rounded bg-[#E04323] hover:bg-[#C43417] text-white font-semibold text-sm text-center transition-colors"
                 >
                   Coordinar por WhatsApp
                 </a>
                 <a
                   href="tel:03874215440"
-                  className="w-full py-2 px-4 rounded bg-[#F7F6F4] hover:bg-neutral-200 text-[#231F20] font-semibold text-xs text-center flex items-center justify-center gap-1.5 transition-colors"
+                  className="flex-1 py-2.5 xl:py-2 px-4 rounded bg-[#F7F6F4] hover:bg-neutral-200 text-[#231F20] font-semibold text-xs text-center flex items-center justify-center gap-1.5 transition-colors"
                 >
-                  <Phone className="w-3.5 h-3.5 text-[#E04323]" />
+                  <Phone className="w-3.5 h-3.5 shrink-0 text-[#E04323]" />
                   <span>Llamar al (0387) 421-5440</span>
                 </a>
               </div>

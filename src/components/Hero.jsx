@@ -68,7 +68,7 @@ export default function Hero({ onNavigate }) {
       style={{ fontFamily: "'IBM Plex Sans', sans-serif" }}
     >
       {/* Institutional Photographic / Google Flow Video Banner */}
-      <div className="relative min-h-[410px] sm:min-h-[470px] md:min-h-[530px] flex items-center overflow-hidden bg-[#181515]">
+      <div className="relative min-h-[370px] sm:min-h-[420px] lg:min-h-[450px] xl:min-h-[500px] flex items-center overflow-hidden bg-[#181515]">
         <video
           src={`${import.meta.env.BASE_URL}banners/hero-saresa.mp4`}
           poster={heroClinicaImg}
@@ -86,13 +86,13 @@ export default function Hero({ onNavigate }) {
           className="hidden md:block absolute inset-0"
           style={{
             background:
-              'linear-gradient(90deg, rgba(18, 15, 15, 0.90) 0%, rgba(22, 18, 18, 0.76) 44%, rgba(22, 18, 18, 0.22) 76%, rgba(22, 18, 18, 0.04) 100%)',
+              'linear-gradient(90deg, rgba(18, 15, 15, 0.90) 0%, rgba(22, 18, 18, 0.78) 48%, rgba(22, 18, 18, 0.28) 78%, rgba(22, 18, 18, 0.06) 100%)',
           }}
         />
 
-        <div className="container relative z-10 py-10 sm:py-14 md:py-20">
+        <div className="container relative z-10 py-8 sm:py-12 lg:py-14 xl:py-16">
           <div className="max-w-2xl">
-            <div className="inline-flex max-w-full items-center gap-2 px-3 sm:px-3.5 py-1.5 rounded bg-black/35 backdrop-blur-xs border border-white/25 text-white text-[11.5px] sm:text-sm font-medium mb-4 sm:mb-5">
+            <div className="inline-flex max-w-full items-center gap-2 px-3 sm:px-3.5 py-1.5 rounded bg-black/35 backdrop-blur-xs border border-white/25 text-white text-[11.5px] sm:text-xs xl:text-sm font-medium mb-3.5 sm:mb-4">
               <span className="w-2 h-2 shrink-0 rounded-full bg-[#FAA61A]" />
               <span className="leading-snug">
                 Mariano Boedo 23, Salta · Atención por orden de llegada
@@ -100,7 +100,7 @@ export default function Hero({ onNavigate }) {
             </div>
 
             <h1
-              className="text-[26px] min-[390px]:text-[29px] sm:text-4xl md:text-[44px] font-bold text-white leading-[1.14] tracking-tight mb-3.5 sm:mb-4"
+              className="text-[24px] min-[390px]:text-[28px] sm:text-4xl lg:text-[40px] xl:text-[44px] font-bold text-white leading-[1.14] tracking-tight mb-3 sm:mb-4"
               style={{
                 color: '#FFFFFF',
                 textShadow: '0 2px 16px rgba(0, 0, 0, 0.35)',
@@ -110,18 +110,18 @@ export default function Hero({ onNavigate }) {
             </h1>
 
             <p
-              className="text-sm min-[390px]:text-base sm:text-lg text-white/95 leading-relaxed mb-6 sm:mb-8 max-w-xl"
+              className="text-sm min-[390px]:text-[15px] sm:text-base xl:text-lg text-white/95 leading-relaxed mb-5 sm:mb-7 max-w-xl"
               style={{ textShadow: '0 1px 8px rgba(0, 0, 0, 0.3)' }}
             >
               Más de 300 análisis bioquímicos, extracciones a domicilio y
               medicina reproductiva con resultados rápidos y confiables.
             </p>
 
-            <div className="flex flex-col sm:flex-row sm:flex-wrap items-stretch sm:items-center gap-2.5 sm:gap-3.5">
+            <div className="flex flex-col sm:flex-row sm:flex-wrap items-stretch sm:items-center gap-2.5 sm:gap-3">
               <button
                 type="button"
                 onClick={() => onNavigate('pacientes')}
-                className="inline-flex w-full sm:w-auto items-center justify-center gap-2 px-5 py-3.5 rounded bg-[#E04323] hover:bg-[#C43417] active:scale-[0.99] text-white font-semibold text-sm sm:text-base shadow-sm transition-all cursor-pointer"
+                className="inline-flex w-full sm:w-auto items-center justify-center gap-2 px-5 py-3 rounded bg-[#E04323] hover:bg-[#C43417] active:scale-[0.99] text-white font-semibold text-sm sm:text-[15px] shadow-sm transition-all cursor-pointer"
               >
                 <span>Indicaciones y Atención Sin Turno</span>
                 <ArrowRight className="w-4 h-4 shrink-0" />
@@ -131,7 +131,7 @@ export default function Hero({ onNavigate }) {
                 href="https://wa.me/5493872129924?text=Hola%20Laboratorio%20Saresa,%20quisiera%20coordinar%20una%20extracci%C3%B3n%20a%20domicilio."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex w-full sm:w-auto items-center justify-center gap-2 px-5 py-3.5 rounded bg-white hover:bg-[#F7F6F4] active:scale-[0.99] text-[#231F20] font-semibold text-sm sm:text-base shadow-sm transition-all"
+                className="inline-flex w-full sm:w-auto items-center justify-center gap-2 px-5 py-3 rounded bg-white hover:bg-[#F7F6F4] active:scale-[0.99] text-[#231F20] font-semibold text-sm sm:text-[15px] shadow-sm transition-all"
               >
                 <Home className="w-4 h-4 shrink-0 text-[#E04323]" />
                 <span>Extracción a domicilio por WhatsApp</span>
@@ -143,23 +143,23 @@ export default function Hero({ onNavigate }) {
 
       {/* Overlapping White 4 Key Pillars + Compact Search Bar */}
       <div className="container">
-        <div className="-mt-6 sm:-mt-10 relative z-20 bg-white rounded-md shadow-md border border-neutral-200">
-          {/* Upper Bar: 4 Key Commercial Pillars (2x2 on mobile, 1x4 on desktop) */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 border-b border-neutral-200">
+        <div className="-mt-5 sm:-mt-8 relative z-20 bg-white rounded-md shadow-md border border-neutral-200">
+          {/* Upper Bar: 1 col en celulares chicos (<480px), 2x2 en celulares grandes/tablets/notebooks compactas (480px-1279px) y 1x4 en escritorio amplio (>=1280px) */}
+          <div className="grid grid-cols-1 min-[480px]:grid-cols-2 xl:grid-cols-4 border-b border-neutral-200">
             {/* 1. Atención sin turno */}
             <button
               type="button"
               onClick={() => onNavigate('pacientes')}
-              className="p-3.5 sm:p-5 text-left hover:bg-[#F7F6F4]/70 active:bg-[#F7F6F4] transition-colors cursor-pointer flex flex-col sm:flex-row items-start gap-2 sm:gap-3.5 border-b border-r border-neutral-200 lg:border-b-0 group"
+              className="p-3.5 sm:p-4 xl:p-5 text-left hover:bg-[#F7F6F4]/70 active:bg-[#F7F6F4] transition-colors cursor-pointer flex items-start gap-3 sm:gap-3.5 border-b border-neutral-200 min-[480px]:border-r xl:border-b-0 group"
             >
-              <div className="w-9 h-9 sm:w-11 sm:h-11 rounded bg-[#E04323]/10 text-[#E04323] flex items-center justify-center flex-shrink-0">
+              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded bg-[#E04323]/10 text-[#E04323] flex items-center justify-center flex-shrink-0">
                 <Clock className="w-4 h-4 sm:w-5 sm:h-5" />
               </div>
               <div className="min-w-0">
-                <h2 className="text-[13.5px] min-[390px]:text-sm sm:text-base font-bold text-[#231F20] group-hover:text-[#E04323] transition-colors leading-snug">
+                <h2 className="text-sm sm:text-[15px] font-bold text-[#231F20] group-hover:text-[#E04323] transition-colors leading-snug">
                   Atención sin turno
                 </h2>
-                <p className="text-[11.5px] sm:text-xs text-[#52525B] mt-0.5 leading-snug">
+                <p className="text-xs text-[#52525B] mt-0.5 leading-snug">
                   Lun a Vie 7:30–11:30 · Sáb 9:00–11:30 hs (espera &lt; 10 min)
                 </p>
               </div>
@@ -169,16 +169,16 @@ export default function Hero({ onNavigate }) {
             <button
               type="button"
               onClick={() => onNavigate('profesionales')}
-              className="p-3.5 sm:p-5 text-left hover:bg-[#F7F6F4]/70 active:bg-[#F7F6F4] transition-colors cursor-pointer flex flex-col sm:flex-row items-start gap-2 sm:gap-3.5 border-b border-neutral-200 lg:border-b-0 lg:border-r group"
+              className="p-3.5 sm:p-4 xl:p-5 text-left hover:bg-[#F7F6F4]/70 active:bg-[#F7F6F4] transition-colors cursor-pointer flex items-start gap-3 sm:gap-3.5 border-b border-neutral-200 xl:border-b-0 xl:border-r group"
             >
-              <div className="w-9 h-9 sm:w-11 sm:h-11 rounded bg-[#E04323]/10 text-[#E04323] flex items-center justify-center flex-shrink-0">
+              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded bg-[#E04323]/10 text-[#E04323] flex items-center justify-center flex-shrink-0">
                 <Microscope className="w-4 h-4 sm:w-5 sm:h-5" />
               </div>
               <div className="min-w-0">
-                <h2 className="text-[13.5px] min-[390px]:text-sm sm:text-base font-bold text-[#231F20] group-hover:text-[#E04323] transition-colors leading-snug">
+                <h2 className="text-sm sm:text-[15px] font-bold text-[#231F20] group-hover:text-[#E04323] transition-colors leading-snug">
                   +300 análisis
                 </h2>
-                <p className="text-[11.5px] sm:text-xs text-[#52525B] mt-0.5 leading-snug">
+                <p className="text-xs text-[#52525B] mt-0.5 leading-snug">
                   Rutina, hormonas, pediatría y alta complejidad
                 </p>
               </div>
@@ -188,16 +188,16 @@ export default function Hero({ onNavigate }) {
             <button
               type="button"
               onClick={() => onNavigate('reproduccion')}
-              className="p-3.5 sm:p-5 text-left hover:bg-[#F7F6F4]/70 active:bg-[#F7F6F4] transition-colors cursor-pointer flex flex-col sm:flex-row items-start gap-2 sm:gap-3.5 border-r border-neutral-200 group"
+              className="p-3.5 sm:p-4 xl:p-5 text-left hover:bg-[#F7F6F4]/70 active:bg-[#F7F6F4] transition-colors cursor-pointer flex items-start gap-3 sm:gap-3.5 border-b min-[480px]:border-b-0 min-[480px]:border-r border-neutral-200 group"
             >
-              <div className="w-9 h-9 sm:w-11 sm:h-11 rounded bg-[#7E1418]/10 text-[#7E1418] flex items-center justify-center flex-shrink-0">
+              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded bg-[#7E1418]/10 text-[#7E1418] flex items-center justify-center flex-shrink-0">
                 <Dna className="w-4 h-4 sm:w-5 sm:h-5" />
               </div>
               <div className="min-w-0">
-                <h2 className="text-[13.5px] min-[390px]:text-sm sm:text-base font-bold text-[#231F20] group-hover:text-[#7E1418] transition-colors leading-snug">
+                <h2 className="text-sm sm:text-[15px] font-bold text-[#231F20] group-hover:text-[#7E1418] transition-colors leading-snug">
                   Embriología y Fertilidad
                 </h2>
-                <p className="text-[11.5px] sm:text-xs text-[#52525B] mt-0.5 leading-snug">
+                <p className="text-xs text-[#52525B] mt-0.5 leading-snug">
                   Reproducción humana asistida acreditada SAMER
                 </p>
               </div>
@@ -208,28 +208,28 @@ export default function Hero({ onNavigate }) {
               href="https://wa.me/5493872129924?text=Hola%20Laboratorio%20Saresa,%20quisiera%20coordinar%20una%20extracci%C3%B3n%20a%20domicilio."
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3.5 sm:p-5 text-left hover:bg-[#F7F6F4]/70 active:bg-[#F7F6F4] transition-colors flex flex-col sm:flex-row items-start gap-2 sm:gap-3.5 group"
+              className="p-3.5 sm:p-4 xl:p-5 text-left hover:bg-[#F7F6F4]/70 active:bg-[#F7F6F4] transition-colors flex items-start gap-3 sm:gap-3.5 group"
             >
-              <div className="w-9 h-9 sm:w-11 sm:h-11 rounded bg-[#E04323]/10 text-[#E04323] flex items-center justify-center flex-shrink-0">
+              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded bg-[#E04323]/10 text-[#E04323] flex items-center justify-center flex-shrink-0">
                 <Home className="w-4 h-4 sm:w-5 sm:h-5" />
               </div>
               <div className="min-w-0">
-                <h2 className="text-[13.5px] min-[390px]:text-sm sm:text-base font-bold text-[#231F20] group-hover:text-[#E04323] transition-colors leading-snug">
+                <h2 className="text-sm sm:text-[15px] font-bold text-[#231F20] group-hover:text-[#E04323] transition-colors leading-snug">
                   Extracciones a domicilio
                 </h2>
-                <p className="text-[11.5px] sm:text-xs text-[#52525B] mt-0.5 leading-snug">
+                <p className="text-xs text-[#52525B] mt-0.5 leading-snug">
                   Vamos a tu hogar en Salta · Coordiná por WhatsApp
                 </p>
               </div>
             </a>
           </div>
 
-          {/* Lower Bar: Compact 1-Line Study & Preparation Search */}
+          {/* Lower Bar: Compact Study & Preparation Search */}
           <div
             ref={searchContainerRef}
             className="px-3.5 py-3.5 sm:px-5 sm:py-4 bg-[#F7F6F4]/50 relative"
           >
-            <div className="flex flex-col md:flex-row md:items-center gap-2.5 sm:gap-3">
+            <div className="flex flex-col xl:flex-row xl:items-center gap-2.5 xl:gap-3">
               <div className="relative flex-1 min-w-0">
                 <Search className="w-4 h-4 text-[#52525B] absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
                 <input
@@ -241,7 +241,7 @@ export default function Hero({ onNavigate }) {
                     setIsOpenDropdown(true);
                   }}
                   placeholder="¿Qué estudio te pidieron? Ej: Glucemia, Espermograma, TSH..."
-                  className="w-full pl-10 pr-9 py-2.5 rounded border border-neutral-300 focus:border-[#E04323] focus:outline-none text-base sm:text-sm text-[#231F20] bg-white"
+                  className="w-full pl-10 pr-9 py-2.5 rounded border border-neutral-300 focus:border-[#E04323] focus:outline-none text-base sm:text-sm text-[#231F20] bg-white truncate"
                 />
                 {query && (
                   <button
