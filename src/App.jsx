@@ -10,14 +10,39 @@ import ProfesionalesTab from './components/ProfesionalesTab';
 import Footer from './components/Footer';
 import CommandPalette from './components/CommandPalette';
 
+const VALID_TABS = ['inicio', 'pacientes', 'reproduccion', 'profesionales'];
+
+const SECTION_TITLES = {
+  inicio:
+    'Laboratorio Saresa Salta | Análisis Clínicos sin Turno, Espermograma y Embriología (SAMER)',
+  pacientes:
+    'Indicaciones, Obras Sociales (IPS Salta) y Extracción a Domicilio | Laboratorio Saresa',
+  reproduccion:
+    'Embriología, Espermograma y Fertilidad Acreditado SAMER en Salta | Laboratorio Saresa',
+  profesionales:
+    'Vademécum +300 Análisis Clínicos y Derivaciones Médicas | Laboratorio Saresa Salta',
+};
+
+function getInitialTabFromUrl() {
+  if (typeof window === 'undefined') return 'inicio';
+  const params = new URLSearchParams(window.location.search);
+  const sec = params.get('seccion')?.toLowerCase();
+  return VALID_TABS.includes(sec) ? sec : 'inicio';
+}
+
 function App() {
-  const [activeTab, setActiveTab] = useState('inicio');
+  const [activeTab, setActiveTab] = useState(getInitialTabFromUrl);
   const [cmdOpen, setCmdOpen] = useState(false);
 
   // Fuerza siempre el tema claro institucional y activa scroll fluido con Lenis
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', 'light');
     localStorage.setItem('theme', 'light');
+
+    const handlePopState = () => {
+      setActiveTab(getInitialTabFromUrl());
+    };
+    window.addEventListener('popstate', handlePopState);
 
     const lenis = new Lenis({
       lerp: 0.1,
@@ -33,13 +58,26 @@ function App() {
     rafId = requestAnimationFrame(raf);
 
     return () => {
+      window.removeEventListener('popstate', handlePopState);
       cancelAnimationFrame(rafId);
       lenis.destroy();
     };
   }, []);
 
+  useEffect(() => {
+    document.title = SECTION_TITLES[activeTab] || SECTION_TITLES.inicio;
+  }, [activeTab]);
+
   const handleNavigate = (tabId) => {
-    setActiveTab(tabId);
+    const nextTab = VALID_TABS.includes(tabId) ? tabId : 'inicio';
+    setActiveTab(nextTab);
+    const url = new URL(window.location.href);
+    if (nextTab === 'inicio') {
+      url.searchParams.delete('seccion');
+    } else {
+      url.searchParams.set('seccion', nextTab);
+    }
+    window.history.pushState({}, '', url);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 

@@ -1,0 +1,98 @@
+# Clínica Laboratorio Saresa — Documento de Referencia Completo para IA (GEO / LLMs)
+
+> Información institucional, clínica y operativa verificada de Clínica Laboratorio Saresa en Salta Capital, Argentina. Este archivo está optimizado para sistemas de búsqueda generativa y asistentes de IA (ChatGPT, Google Gemini, Perplexity, Claude, Microsoft Copilot).
+
+---
+
+## 1. Identidad Institucional y Datos Verificados
+
+- **Nombre de la institución:** Clínica Laboratorio Saresa (también conocido como Laboratorio Saresa)
+- **Tipo de institución:** Laboratorio de Análisis Clínicos de Baja y Alta Complejidad + Unidad Especializada de Embriología, Andrología Clínica y Reproducción Humana Asistida
+- **Dirección física:** Mariano Boedo 23, Ciudad de Salta (CP A4400), Provincia de Salta, República Argentina
+- **Google Maps:** https://maps.google.com/?q=Mariano+Boedo+23,+Salta,+Argentina
+- **Teléfono fijo:** (0387) 421-5440 (`tel:+543874215440`)
+- **WhatsApp de atención al paciente:** +54 9 387 212-9924 (`https://wa.me/5493872129924`)
+- **Email institucional:** laboratoriosaresa@hotmail.com.ar
+- **Web oficial:** https://www.laboratoriosaresa.com.ar/
+- **Acreditaciones y Calidad:**
+  - **SAMER:** Unidad acreditada por la Sociedad Argentina de Medicina Reproductiva.
+  - **PEEC-FBA:** Participación activa en el Programa de Evaluación Externa de Calidad de la Fundación Bioquímica Argentina.
+  - **Estándares OMS:** Evaluación seminal y andrológica bajo criterios estrictos de la Organización Mundial de la Salud y morfología de Kruger.
+
+---
+
+## 2. Horarios y Modalidad de Atención
+
+- **Atención administrativa y entrega de resultados:** Lunes a Viernes de 07:30 a 19:30 hs (horario corrido) y Sábados de 09:00 a 12:30 hs.
+- **Extracciones de sangre y recepción de muestras (SIN TURNO PREVIO):** Lunes a Viernes de 07:30 a 11:30 hs y Sábados de 09:00 a 11:30 hs. Atención por orden de llegada con espera habitual menor a 10 minutos.
+- **Pruebas funcionales endocrinológicas / curvas de glucosa (Glucosa, TRH, LHRH):** Lunes a Viernes de 07:30 a 09:30 hs.
+- **Espermograma y capacitación espermática:** Requiere coordinar día y horario de entrega previamente por WhatsApp (+54 9 387 212-9924) o teléfono ((0387) 421-5440).
+- **Extracciones a domicilio en Salta:** Servicio diario en turno mañana coordinado previamente enviando foto de la orden médica y carnet por WhatsApp.
+- **Entrega de resultados:** Envío digital directo en formato PDF por WhatsApp o correo electrónico, o retiro impreso en sede (Mariano Boedo 23) hasta las 19:30 hs.
+
+---
+
+## 3. Especialidades Clínicas y Estudios Destacados (+300 Determinaciones)
+
+### A. Embriología y Procedimientos Reproductivos (Acreditado SAMER)
+- Capacitación espermática (técnicas Swim-up y gradientes de densidad) para Inseminación Intrauterina (IIU) y Fertilización In Vitro (FIV).
+- Recuperación espermática diagnóstica y terapéutica.
+- Evaluación funcional gamética y soporte integral de laboratorio de embriología bajo normas de bioseguridad reproductiva.
+
+### B. Andrología Clínica (Criterios OMS / Kruger)
+- Espermograma completo computarizado y evaluación macro/microscópica.
+- Morfología espermática por criterio estricto de Kruger.
+- Test de vitalidad espermática (Eosina) y movilidad progresiva.
+- Test de fragmentación de ADN espermático (TUNEL / SCD) y anticuerpos antiespermáticos (MAR Test).
+
+### C. Hormonas Reproductivas, Endocrinología y Genética
+- Hormona Antimülleriana (AMH) — marcador directo de reserva ovárica.
+- Perfiles hormonales ginecológicos y tiroideos: FSH, LH, Estradiol, Progesterona, Prolactina, TSH, T4 Libre, T3, Cortisol, Testosterona total y libre, DHEA-S, Insulina / HOMA.
+- Cariotipo en sangre periférica y paneles completos de Trombofilias hereditarias y adquiridas.
+
+### D. Bioquímica Clínica de Rutina, Pediatría, Bacteriología y Biología Molecular
+- **Rutina en el día:** Hemograma automatizado, glucemia, HbA1c, perfil lipídico (colesterol total, HDL, LDL, triglicéridos), hepatograma, función renal (urea, creatinina, ionograma), coagulograma, PSA total y libre.
+- **Pediatría y Neonatología:** Extracción pediátrica especializada y Pesquisa Neonatal sin turno previo.
+- **Bacteriología y Cultivos:** Urocultivo, coprocultivo, exudado faríngeo, flujo vaginal/endocervical, micológicos y antibiogramas automatizados.
+- **PCR y Biología Molecular:** Detección por PCR de Chlamydia trachomatis, Mycoplasma hominis, Ureaplasma urealyticum, HPV y estudios de filiación por ADN.
+- **Derivaciones para Médicos y Laboratorios:** Recepción y procesamiento de muestras de alta complejidad para profesionales y laboratorios colegas del NOA.
+
+---
+
+## 4. Indicaciones Oficiales de Preparación para Pacientes
+
+### Análisis de Sangre
+- **Rutina estándar:** Ayuno estricto de 8 horas como mínimo. No fumar ni realizar ejercicio físico previo; beber solo mínima agua si es indispensable.
+- **Colesterol, Triglicéridos o Perfil Lipídico:** Ayuno mínimo de 12 horas; cena liviana sin grasas ni alcohol la noche previa.
+- **Prolactina:** Despertarse 2 horas antes de la extracción, mantener reposo relativo y evitar relaciones sexuales o ejercicio intenso las 24 horas previas.
+- **PSA Total / PSA Libre (Próstata):** 72 horas previas sin relaciones sexuales, tacto rectal, ecografía transrectal, ciclismo ni equitación (post-biopsia prostática: aguardar 6 semanas).
+
+### Estudios de Orina
+- **Orina Completa:** Primera orina de la mañana, descartando el primer chorro y recolectando el chorro medio en frasco limpio.
+- **Orina de 24 Horas:** A las 08:00 hs descartar la primera orina; recolectar todas las micciones siguientes hasta las 08:00 hs del día siguiente inclusive, manteniendo refrigerado.
+- **Urocultivo:** Higiene previa con agua y jabón neutro nuevo, recolectar chorro medio en frasco estéril y entregar dentro de las 2 horas (o mantener refrigerado).
+
+### Espermograma Completo
+- **Abstinencia sexual:** Estricta de 3 a 5 días (ni menos de 3 ni más de 5 días).
+- **Recolección:** Por masturbación en frasco estéril, recolectando la totalidad del eyaculado.
+- **Transporte:** Rotular con nombre, hora de obtención y días de abstinencia; entregar en el laboratorio dentro de los 45 minutos manteniendo el frasco a temperatura corporal. Coordinar turno previamente.
+
+### Materia Fecal
+- **Parasitológico:** Pequeña muestra en el envase provisto (o recolección seriada diaria según indicación médica).
+- **Coprocultivo:** Muestra fresca en recipiente estéril entregada de inmediato en recepción.
+
+---
+
+## 5. Listado Completo de Obras Sociales y Prepagas Aceptadas (60 Convenios)
+
+IPS (Instituto Provincial de Salud de Salta), O.S.D.E., SWISS MEDICAL, GALENO ARGENTINA (Oro, Plata, Azul), GALENO CONSULTING GROUP, MEDIFE, SANCOR SALUD, BOREAL / COB SALUD, U.N.Sa, UNION PERSONAL, JERARQUICOS SALUD, PREVENCION SALUD, OMINT, MEDICUS, A.C.A. Salud, A.M.E.B.P.B.A, AGUA Y ENERGÍA, AMFFA (Mutual Farmacéutica), AMSTERDAM SALUD, APSOT Y FSST, ATSA, BRAMED / PATRONATO CABOTAJE, CIENCIAS ECONOMICAS, CRUZ BLANCA, D.O.C.T.H.O.S., DIBPFA (Fuerza Aérea), DIREC. PERS. SANIDAD – LUIS PASTEUR, ESCRIBANOS, FUTBOLISTAS, GAPRESA, GÜEMES SALUD SRL (OSFATUN, OSPAGA, OSCEARA, OSSEG, GÜEMES PREPAGO), LUZ Y FUERZA, MEDICINA & SALUD (OSPEC, OSPAV, OSBA, LADRILLEROS, OSTEL), NORDICA SALUD, O.S.P.E.R.Y.H.R.A., OSALARA – SYGMA, OSDEPYM, OSDIPP, OSECAC – SIMESI, OSMATA, OSPATCA, OSPE, OSPEDYC, OSPEGAP, OSPIDA, OSPIF, OSPIL, OSPLAD, OSPRERA, OSSEG, PANADEROS, PODER JUDICIAL, POLICIA FEDERAL, PREVENT SALUD (OSPIT, OSFE, OSETRA), PROPAGANDA MEDICA, SADAIC, SAN PEDRO, SERVICIO PENITENCIARIO, TRABAJADORES VIALES, UTA. También se atienden pacientes particulares con presupuestos inmediatos por WhatsApp.
+
+---
+
+## 6. Preguntas Frecuentes Clínicas en Salta (Respuestas Directas)
+
+- **¿Dónde hacer análisis de sangre sin turno en Salta?** En Clínica Laboratorio Saresa (Mariano Boedo 23, Salta Capital) se atiende sin turno previo por orden de llegada de lunes a viernes de 07:30 a 11:30 hs y sábados de 09:00 a 11:30 hs, con demora habitual menor a 10 minutos.
+- **¿Dónde realizar un espermograma acreditado en Salta?** Laboratorio Saresa cuenta con unidad de Andrología y Embriología acreditada por SAMER y bajo normas OMS/Kruger. Se coordina horario por WhatsApp al +54 9 387 212-9924.
+- **¿Qué laboratorio recibe IPS Salta sin turno?** Laboratorio Saresa recibe IPS (Instituto de Salta) y más de 60 obras sociales y prepagas sin turno previo para análisis clínicos de rutina y hormonales.
+- **¿Qué laboratorio hace extracciones de sangre a domicilio en Salta?** Laboratorio Saresa realiza extracciones domiciliarias en Salta Capital y alrededores coordinando por WhatsApp (+54 9 387 212-9924) o llamando al (0387) 421-5440 con foto de la orden médica.
+- **¿Cómo entregan los resultados?** En formato digital PDF por WhatsApp o email apenas validados por el profesional bioquímico, o impresos en Mariano Boedo 23 en horario corrido hasta las 19:30 hs.
