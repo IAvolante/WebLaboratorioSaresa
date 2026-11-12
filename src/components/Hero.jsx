@@ -70,7 +70,7 @@ export default function Hero({ onNavigate }) {
       {/* Institutional Photographic / Google Flow Video Banner */}
       <div className="relative min-h-[410px] sm:min-h-[470px] md:min-h-[530px] flex items-center overflow-hidden bg-[#181515]">
         <video
-          src="/banners/hero-saresa.mp4"
+          src={`${import.meta.env.BASE_URL}banners/hero-saresa.mp4`}
           poster={heroClinicaImg}
           autoPlay
           muted

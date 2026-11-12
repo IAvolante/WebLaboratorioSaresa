@@ -170,7 +170,7 @@ export default function InicioTab({ onNavigate }) {
             <div className="lg:col-span-6">
               <div className="relative rounded-md overflow-hidden border border-neutral-200 shadow-sm bg-[#F7F6F4]">
                 <video
-                  src="/banners/reproduccion-saresa.mp4"
+                  src={`${import.meta.env.BASE_URL}banners/reproduccion-saresa.mp4`}
                   poster={andrologiaImg}
                   autoPlay
                   muted

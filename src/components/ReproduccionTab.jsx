@@ -111,7 +111,7 @@ export default function ReproduccionTab({ onNavigate }) {
             <div className="lg:col-span-5">
               <div className="rounded-md overflow-hidden border border-neutral-200 shadow-sm bg-white">
                 <video
-                  src="/banners/reproduccion-saresa.mp4"
+                  src={`${import.meta.env.BASE_URL}banners/reproduccion-saresa.mp4`}
                   poster={andrologiaImg}
                   autoPlay
                   muted
